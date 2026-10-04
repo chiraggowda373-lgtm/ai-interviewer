@@ -48,7 +48,7 @@ export default function Home() {
           <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 w-full max-w-md shadow-2xl [animation:float_6s_ease-in-out_infinite]">
             <h2 className="text-2xl font-semibold mb-6 text-white">Candidate Setup</h2>
             
-            <form action="/start-interview" method="POST" className="space-y-5">
+            <form action="https://ai-interviewer-d5v8.onrender.com/start-interview" method="POST" className="space-y-5">
               
               {/* Name Input */}
               <div>
@@ -57,24 +57,28 @@ export default function Home() {
                   className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" />
               </div>
 
-              <select id="role" name="role" 
-  className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none">
-  
-  {/* Existing Tech Roles */}
-  <option value="software_engineer">Software Engineer</option>
-  <option value="data_scientist">Data Scientist</option>
-  <option value="product_manager">Product Manager</option>
-  
-  {/* Additional Tech Roles */}
-  <option value="ai_engineer">AI Engineer</option>
-  <option value="database_administrator">Database Administrator</option>
-  <option value="frontend_developer">Frontend Developer</option>
+              {/* Role Dropdown */}
+              <div>
+                <label htmlFor="role" className="block text-sm font-medium text-slate-300 mb-2">Target Role</label>
+                <select id="role" name="role" 
+                  className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none">
+                  
+                  {/* Existing Tech Roles */}
+                  <option value="software_engineer">Software Engineer</option>
+                  <option value="data_scientist">Data Scientist</option>
+                  <option value="product_manager">Product Manager</option>
+                  
+                  {/* Additional Tech Roles */}
+                  <option value="ai_engineer">AI Engineer</option>
+                  <option value="database_administrator">Database Administrator</option>
+                  <option value="frontend_developer">Frontend Developer</option>
 
-  {/* Non-Tech / Specialized Roles */}
-  <option value="police_sub_inspector">Police Sub-Inspector</option>
-  <option value="marketing_manager">Marketing Manager</option>
-  <option value="financial_analyst">Financial Analyst</option>
-</select>
+                  {/* Non-Tech / Specialized Roles */}
+                  <option value="police_sub_inspector">Police Sub-Inspector</option>
+                  <option value="marketing_manager">Marketing Manager</option>
+                  <option value="financial_analyst">Financial Analyst</option>
+                </select>
+              </div>
 
               {/* Animated Button */}
               <button type="submit" 
