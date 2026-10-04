@@ -57,16 +57,24 @@ export default function Home() {
                   className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" />
               </div>
 
-              {/* Role Dropdown */}
-              <div>
-                <label htmlFor="role" className="block text-sm font-medium text-slate-300 mb-2">Target Role</label>
-                <select id="role" name="role" 
-                  className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none">
-                  <option value="software_engineer">Software Engineer</option>
-                  <option value="data_scientist">Data Scientist</option>
-                  <option value="product_manager">Product Manager</option>
-                </select>
-              </div>
+              <select id="role" name="role" 
+  className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none">
+  
+  {/* Existing Tech Roles */}
+  <option value="software_engineer">Software Engineer</option>
+  <option value="data_scientist">Data Scientist</option>
+  <option value="product_manager">Product Manager</option>
+  
+  {/* Additional Tech Roles */}
+  <option value="ai_engineer">AI Engineer</option>
+  <option value="database_administrator">Database Administrator</option>
+  <option value="frontend_developer">Frontend Developer</option>
+
+  {/* Non-Tech / Specialized Roles */}
+  <option value="police_sub_inspector">Police Sub-Inspector</option>
+  <option value="marketing_manager">Marketing Manager</option>
+  <option value="financial_analyst">Financial Analyst</option>
+</select>
 
               {/* Animated Button */}
               <button type="submit" 
