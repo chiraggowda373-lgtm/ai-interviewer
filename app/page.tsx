@@ -2,9 +2,12 @@ export default function Home() {
   return (
     <div className="bg-slate-950 text-slate-100 min-h-screen flex flex-col relative overflow-hidden font-sans">
       
-      {/* Animated Background Gradient */}
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/40 via-slate-950 to-slate-950"></div>
-
+      {/* Animated Moving Background Image */}
+      <div className="absolute inset-0 z-0 overflow-hidden bg-slate-950">
+        <div className="absolute inset-0 z-0 bg-[url('/bg.jpg')] opacity-20 moving-bg"></div>
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-slate-950/80 to-transparent"></div>
+      </div>
+      
       {/* Navigation */}
       <nav className="relative z-10 w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center opacity-0 [animation:fadeInUp_0.8s_ease-out_forwards]">
         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
