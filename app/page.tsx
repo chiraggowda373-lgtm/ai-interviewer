@@ -48,7 +48,7 @@ export default function Home() {
           <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 w-full max-w-md shadow-2xl [animation:float_6s_ease-in-out_infinite]">
             <h2 className="text-2xl font-semibold mb-6 text-white">Candidate Setup</h2>
             
-            <form action="https://ai-interviewer-d5v8.onrender.com/start-interview" method="POST" className="space-y-5">
+            <form action="https://ai-interviewer-ui.onrender.com/start-interview" method="POST" className="space-y-5">
               
               {/* Name Input */}
               <div>
