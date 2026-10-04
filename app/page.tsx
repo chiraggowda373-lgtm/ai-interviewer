@@ -4,10 +4,10 @@ export default function Home() {
       
       {/* Animated Moving Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden bg-slate-950">
-        <div className="absolute inset-0 z-0 bg-[url('/bg.jpg')] opacity-20 moving-bg"></div>
+        <div className="absolute inset-0 z-0 bg-[url('/bg.jpg.jpg')] opacity-20 moving-bg"></div>
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-slate-950/80 to-transparent"></div>
       </div>
-      
+
       {/* Navigation */}
       <nav className="relative z-10 w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center opacity-0 [animation:fadeInUp_0.8s_ease-out_forwards]">
         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
